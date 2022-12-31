@@ -7,8 +7,12 @@ To use this script, you will need to have a mail server configured on your syste
 
 You can run this script periodically using a tool such as cron to check for changes in the MegaRAID array status and number of disks. For example, you can add the following entry to your crontab file to run the script every hour:
 
+```
 0 * * * * /path/to/megaraid_status.sh
+```
 
 This will run the script every hour and send an email notification if a change in the MegaRAID array status or number of disks is detected. You can also specify the -c option when running the script with cron to count the number of disks in the MegaRAID array. For example:
 
+```
 0 * * * * /path/to/megaraid_status.sh -c
+```
